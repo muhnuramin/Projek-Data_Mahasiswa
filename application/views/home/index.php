@@ -1,6 +1,6 @@
 <div class="container">
     <h1 class="my-2">Data Mahasiwa</h1>
-    <a href="Halaman/pendaftaran" type="button" class="btn btn-primary mb-2">Tambah Data</a>
+    <a href="<?= base_url(); ?>pendaftaran" type="button" class="btn btn-primary mb-2">Tambah Data</a>
     <table class="table">
         <caption>List of users</caption>
         <thead>
@@ -20,8 +20,8 @@
                     <th class="align-middle" scope="row"><?= $i++; ?></th>
                     <td class="align-middle"><?= $m['nim']; ?></td>
                     <td class="align-middle"><?= $m['nama']; ?></td>
-                    <td>Mark</td>
-                    <td>Otto</td>
+                    <td><img src="./images/<?= $m['foto_mahasiswa'] ?>"  width="70px"></td>
+                    <td><img src="./images/<?= $m['foto_ktp'] ?>"  width="70px"></td>
                     <td class="align-middle">
                         <a href="/Halaman/delete/<?= $m['id']; ?>" class="btn btn-danger">Delete</a>
                         <a href="/Halaman/edit/<?= $m['id']; ?>" type="button" class="btn btn-warning">Edit</a>

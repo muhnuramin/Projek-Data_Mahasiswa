@@ -6,4 +6,8 @@ class Mahasiswa_model extends CI_model
     {
         return $this->db->get('mahasiswa')->result_array();
     }
+    public function insert()
+    {
+        // 
+    }
 }
